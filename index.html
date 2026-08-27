@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hum. — this moved</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://aviwise.github.io/hum/">
+<script>
+  // Forward the whole path, not just the home page: /out-dc/s/14th-and-u/
+  // has to land on that spot's share page, and /out-dc/#/tonight has to keep
+  // its hash route. Anything we cannot map falls through to the map itself.
+  (function () {
+    var FROM = '/out-dc/', TO = '/hum/';
+    var p = location.pathname;
+    var rest = p.indexOf(FROM) === 0 ? p.slice(FROM.length) : '';
+    location.replace(TO + rest + location.search + location.hash);
+  })();
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://aviwise.github.io/hum/">
+</noscript>
+<style>
+  body { margin:0; min-height:100vh; display:grid; place-items:center;
+         background:#FBF7F0; color:#2A2724;
+         font:400 17px/1.5 ui-serif, Georgia, serif; text-align:center; padding:2rem; }
+  a { color:#6B3F6E; }
+  .m { font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+       font-family:ui-sans-serif, system-ui, sans-serif; opacity:.6; margin-top:1.25rem; }
+</style>
+</head>
+<body>
+  <div>
+    <p><strong>out.</strong> is called <strong>hum.</strong> now.</p>
+    <p><a href="https://aviwise.github.io/hum/">aviwise.github.io/hum/</a></p>
+    <p class="m">Taking you there…</p>
+  </div>
+</body>
+</html>
